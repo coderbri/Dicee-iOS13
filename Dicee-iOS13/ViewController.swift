@@ -19,13 +19,14 @@ class ViewController: UIViewController {
         
         // Format: who.what  = value
         diceImageView1.image = UIImage(imageLiteralResourceName: "DiceSix")
-        
-        // Practicing changing variables
-        diceImageView1.alpha = 0.5
-        
         diceImageView2.image = UIImage(imageLiteralResourceName: "DiceTwo")
     }
 
-
+    @IBAction func rollButtonPressed(_ sender: UIButton) {
+//        print("Button got tapped.")
+        diceImageView1.image = UIImage(imageLiteralResourceName: "DiceFour")
+        diceImageView2.image = UIImage(imageLiteralResourceName: "DiceFour")
+    }
+    
 }
 
